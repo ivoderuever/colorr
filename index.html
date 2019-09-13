@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107853105-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-107853105-6');
+        </script>
+        <meta charset="UTF-8">
+        <meta name="robots" content="all">
+        <meta name="language" content="English">
+        <meta name="author" content="ivo de ruever">
+        <meta name="description" content="Colorr a webpage where you can see random generated colors.">
+        <meta name="keywords" content="colorr, colorgen, generator, colorgenerator, color generator, color, colors, ivo de ruever, ivo, random, random colors">
+        <meta name="copyright" content="copyright">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="#082837">
+        <link rel="apple-touch-icon" sizes="57x57" href="media/fav/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="media/fav/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="media/fav/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="media/fav/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="media/fav/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="media/fav/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="media/fav/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="media/fav/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="media/fav/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="media/fav/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="media/fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="media/fav/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="media/fav/favicon-16x16.png">
+        <link rel="manifest" href="media/fav/manifest.json">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <title>Colorr - Color generator</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    </head>
+
+    <body class="body">
+        <div class="messagebox">
+            <div class="message">
+            </div>
+        </div>
+        <div id="overlay" class="overlay-container">
+            <div class="overlay-content">
+                <div class="picture-container">
+                    <div id="close-img">
+                        <i class="fas fa-lg fa-times close-icon"></i>
+                        <div id="overlay-content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay">
+            </div>
+        </div>
+        <header class="left-container">
+            <div class="menu-button">
+                <h1 class="title">Colorr</h1>
+                <i id="menu" class="fas fa-2x fa-bars menu-icon"></i>
+            </div>
+            <div class="tools">
+                <div class="item colors one">
+                    <h2 id="one" class="hexcode">#082837</h2>
+                    <div class="items">
+                        <i data-clipboard-action="copy" data-clipboard-target="#one" class="fas fa-lg fa-copy icon copytwo"></i>
+                        <i class="lock one-lock fas fa-lg fa-lock-open icon"></i>
+                    </div>
+                </div>
+                <div class="item colors two">
+                    <h2 id="two" class="hexcode">#FD7579</h2>
+                    <div class="items">
+                        <i data-clipboard-action="copy" data-clipboard-target="#two" class="fas fa-lg fa-copy icon copytwo"></i>
+                        <i class="lock two-lock fas fa-lg fa-lock-open icon"></i>
+                    </div>
+                </div>
+                <div id="switchColors" class="item switch-colors">
+                    <div class="content">
+                        <i class="fas fa-lg fa-sync-alt switch-icon"></i>
+                        <h2>Switch colors</h2>
+                    </div>
+                </div>
+                <div class="savebutton">
+                    <div class="item save">
+                        <div class="content">
+                            <i class="fas fa-lg fa-save icon"></i>
+                            <h2>Save as</h2>
+                        </div>
+                    </div>
+                    <div id="screenshot" class="item img">
+                        <div class="content">
+                            <i class="far fa-lg fa-image icon"></i>
+                            <h2>Image</h2>
+                        </div>
+                    </div>
+                    <div id="css" class="item css">
+                        <div class="content">
+                            <i class="fas fa-lg fa-code icon"></i>
+                            <h2>CSS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-history">
+                    <div class="item">
+                        <div class="content">
+                            <i class="fas fa-lg fa-history"></i>
+                            <h2>History</h2>
+                        </div>
+                    </div>
+                    <div class="item hcolor col0">
+                        <div class="cc"></div>
+                        <div class="bc"></div>
+                        <div class="content arow-btn 0">
+                            <i class="fas fa-lg fa-arrow-right arow"></i>
+                        </div>
+                    </div>
+                    <div class="item hcolor col1">
+                        <div class="cc"></div>
+                        <div class="bc"></div>
+                        <div class="content arow-btn 1">
+                            <i class="fas fa-lg fa-arrow-right arow"></i>
+                        </div>
+                    </div>
+                    <div class="item hcolor col2">
+                        <div class="cc"></div>
+                        <div class="bc"></div>
+                        <div class="content arow-btn 2">
+                            <i class="fas fa-lg fa-arrow-right arow"></i>
+                        </div>
+                    </div>
+                    <div class="item hcolor col3">
+                        <div class="cc"></div>
+                        <div class="bc"></div>
+                        <div class="content arow-btn 3">
+                            <i class="fas fa-lg fa-arrow-right arow"></i>
+                        </div>
+                    </div>
+                    <div class="item hcolor col4">
+                        <div class="cc"></div>
+                        <div class="bc"></div>
+                        <div class="content arow-btn 4">
+                            <i class="fas fa-lg fa-arrow-right arow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <h3>&copy; 2019 Ivo de Ruever</h3>
+            </div>
+        </header>
+        <main class="right-container">
+            <div class="color-palet-demo background-color">
+                <div class="content">
+                    <i class="fas fa-terminal fa-5x icon color"></i>
+                    <h1 class="title color">Demo text</h1>
+                </div>
+                <div class="color-infomation">
+                    <div class="color one" id="1">
+                        <h1 class="text one-text">#082837</h1>
+                    </div>
+                    <div class="color two" id="2">
+                        <h1 class="text two-text">#FD7579</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="randomizeButton" class="randomize-button">
+                <i id="rotation" class="fas fa-sync-alt icon"></i>
+            </div>
+            <div class="bottom-message">
+                <h2>Press spacebar to change color.</h2>
+            </div>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
