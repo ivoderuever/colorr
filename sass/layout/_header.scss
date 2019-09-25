@@ -33,6 +33,7 @@
             display: inline-block;
             font-weight: 400;
             padding: 2px 15px;
+
         }
     
         .menu-icon {
@@ -40,7 +41,7 @@
             left: 100%;
             padding: 10px;
             z-index: 3;
-            color: $justwhite;
+            color: $pureblack;
             transition: all 0.2s ease;
     
             &:hover {
@@ -58,16 +59,15 @@
     
         .menu-icon-open {
             left: 0;
-            color: $kindofred;
+            color: $pureblack;
             transition: all 0.2s ease;
         }
     }
 
     .tools {
-        margin-top: 20px;
         overflow-y: auto;
         width: 100%;
-        height: calc(100vh - 122px);
+        height: calc(100vh - 100px);
 
         .item {
             height: 50px;
@@ -87,6 +87,7 @@
                     position: absolute;
                     right: 10px;
                     padding: 10px 0px;
+                    transition: all 0.2s ease;
                 }
     
                 h2 {
@@ -119,6 +120,7 @@
                 .icon {
                     width: 30px;
                     font-size: 1.3em;
+                    transition: all 0.2s ease;
                 }
             }
         }
@@ -148,13 +150,21 @@
             &:hover {
                 cursor: pointer;
                 transition: all 0.2s ease;
+
+                .switch-icon {
+                    color: #46C5E1;
+                    transition: all 0.2s ease;
+                }
             }
 
             .content {
                 padding: 7px;
 
                 .switch-icon {
-                    display: inline-block;
+                    position: absolute;
+                    right: 10px;
+                    padding: 10px 0px;  
+                    transition: all 0.2s ease;
                 }
     
                 h2 {
@@ -176,14 +186,19 @@
             transition: all 0.4s ease;
 
             &:hover {
-                height: 150px;
+                height: 190px;
                 transition: all 0.4s ease;
+
+                .icon {
+                    color: #5FE5BD;
+                    transition: all 0.2s ease;
+                }
             }
 
             &:hover .img {
                 top: 0px;
                 opacity: 1;
-                z-index: 0; 
+                z-index: 0;
                 transition: all 0.4s ease;
             }
             
@@ -198,19 +213,40 @@
                 position: relative;
                 opacity: 0;
                 z-index: -2;
+                margin-left: 10%;
+                width: 90%;
                 transition: all 0.4s ease;
 
                 .content {
-                    padding: 7px 17px;
+                    padding: 7px;
+                    
+                    .icon {
+                        color: $grey;
+                        transition: all 0.2s ease;
+                    }
                 }
             }
 
             .img {
                 top: -50px;
+                
+                &:hover {
+                    .icon {
+                        color: #FFB186;
+                        transition: all 0.2s ease; 
+                    }
+                }
             }
 
             .css {
                 top: -100px;
+
+                &:hover {
+                    .icon {
+                        color: #FF8383;
+                        transition: all 0.2s ease; 
+                    }
+                }
             }
         }
     }
@@ -225,8 +261,13 @@
         transition: all 0.8s ease;
 
         &:hover {
-            height: 300px;
+            height: 350px;
             transition: all 0.8s ease;
+            
+            .icon {
+                color: #BB85FF;
+                transition: all 0.2s ease;
+            }
         }
         
         &:hover .hcolor {
@@ -259,51 +300,74 @@
             position: relative;
             z-index: -2;
             opacity: 0;
+            margin-left: 10%;
+            width: 90%;
             transition: all 0.8s ease;
+            cursor: pointer;
 
             &:nth-child(2) {
-                top: -100px;                
+                top: -50px;                
             }
 
             &:nth-child(3) {
-                top: -150px;                
+                top: -100px;                
             }
 
             &:nth-child(4) {
-                top: -200px;                
+                top: -150px;                
             }
 
             &:nth-child(5) {
-                top: -250px;                
+                top: -200px;                
             }
 
             &:nth-child(6) {
-                top: -300px;                
+                top: -250px;                
             }
 
             .cc {
                 float: left;
-                width: 32%;
-                height: 50px;
+                width: 29%;
+                height: 30px;
+                margin: 10px 3% 10px 9%;
                 background-color: $kindofred;
             }
 
             .bc {
                 float: left;
-                width: 32%;
-                height: 50px;
+                width: 29%;
+                height: 30px;
+                margin: 10px 3% 10px 9%;
                 background-color: $bleen;
             }
 
             .content {
                 float: left;
-                width: 32%;
-                padding-top: 13px;
-                padding-bottom: 13px;
+                width: 17%;
+                padding: 13px 0;
                 text-align: center;
+
+                .arow {
+                    transition: all 0.2s ease;
+                }
+            }
+
+            &:hover {
+                .arow {
+                    color: #818DFF;
+                    transition: all 0.2s ease;
+                }
             }
         }
 
+    }
+
+    .menu-tools {
+        .item {
+            box-shadow: 0px 2px 4px $shadow;
+            border-radius: 25px;
+            margin-top: 10px;
+        }
     }
 
     .footer {
