@@ -120,6 +120,7 @@
                 .icon {
                     width: 30px;
                     font-size: 1.3em;
+                    cursor: pointer;
                     transition: all 0.2s ease;
                 }
             }
@@ -385,4 +386,9 @@
 
 .left-container-open {
     left: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: $pureblack;
 }
