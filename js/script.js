@@ -202,6 +202,8 @@ $(document).ready(function () {
     var runKonami = function () {
         $('.right-container').toggleClass('background-color color')
         $('.right-container').removeAttr("style");
+        $('.color-palet-demo').toggleClass("shadow");
+        giveRandomColor();
     };
     document.addEventListener('keyup', checkKonami);
 
@@ -300,9 +302,9 @@ $(document).ready(function () {
         }
     }
 
-    $('.arow-btn').click(function () {
+    $('.hcolor').click(function () {
         for(var i = 0; i <= 4; i++) {
-            if($(this).hasClass(i) == true) {
+            if($(this).hasClass('col' + i) == true) {
                 color = colorHistory[i][0];
                 backgroundColor = colorHistory[i][1];
             }
