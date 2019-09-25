@@ -11,10 +11,15 @@
         }
     }
 
-    body {
-        position: relative;
+    html, body {
+        height: 100%;
         width: 100%;
-        min-height: 100vh;
+    }
+
+    body {
+        position: fixed;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
         background-color: $bg-color;
         color: $justwhite;
         font-family: $font;
