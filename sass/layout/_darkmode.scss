@@ -1,0 +1,53 @@
+@media (prefers-color-scheme: dark) {
+    .left-container {
+        color: $somegrey;
+        background-color: $darkerblack;
+
+        .menu-button {
+            .menu-icon {
+                color: $somegrey;
+            }
+        }
+
+        .tools {
+            .item {
+                background-color: $almostblack;
+            }
+
+            .one {
+                background-color: $bleen;
+            }
+
+            .two {
+                background-color: $kindofred;
+            }
+        }
+    }
+
+    .link {
+        color: $somegrey;
+    }
+
+    .right-container {
+        color: $somegrey;
+        background-color: $almostblack;
+
+        .randomize-button {
+            background-color: $darkerblack;
+            
+            .icon {
+                color: $justwhite;
+            }
+        }
+    }
+
+    .overlay-container {
+        .picture-container {
+            background-color: $almostblack;
+
+            .close-icon {
+                color: $somegrey;
+            }
+        }
+    }
+}
