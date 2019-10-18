@@ -8,6 +8,7 @@ var locktrigger = false;
 var locktrigger2 = false;
 var overlay = false;
 var screenshot = false;
+var konami = false;
 var colorHistory = [["#FD7579","#082837"],["#FD7579","#082837"],["#FD7579","#082837"],["#FD7579","#082837"],["#FD7579","#082837"]];
 
 
@@ -80,6 +81,12 @@ $(document).ready(function () {
 
         $('.one').css("background-color", backgroundColor).css("color", getFontColorByBgColor(backgroundColor)).children(".hexcode").text(backgroundColor);
         $('.two').css("background-color", color).css("color", getFontColorByBgColor(color)).children(".hexcode").text(color);
+
+        if(konami === true) {
+            $('.bottom-message').css('color', getFontColorByBgColor(color));
+        } else {
+            $('.bottom-message').css('color', '#949494')
+        }
     }
 
     //when enter is pressed will run function giveRandomColor()
@@ -200,6 +207,11 @@ $(document).ready(function () {
         }
     };
     var runKonami = function () {
+        if(konami === false){
+            konami = true;
+        } else {
+            konami = false
+        }
         $('.right-container').toggleClass('background-color color')
         $('.right-container').removeAttr("style");
         $('.color-palet-demo').toggleClass("shadow");
