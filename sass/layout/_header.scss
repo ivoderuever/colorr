@@ -110,16 +110,18 @@
                 flex-grow: 1;
             }
             
-            .items {      
+            .items {
+                display: flex;
                 .fa-lock {
                     opacity: 1;
                 }
 
                 .icon {
+                    display: block;
                     width: 30px;
                     font-size: 1.3em;
                     cursor: pointer;
-                    transition: all 0.2s ease;
+                    transition: 0.1s;
                 }
             }
         }
