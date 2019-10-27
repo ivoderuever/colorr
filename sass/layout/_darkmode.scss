@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: dark) {
     .left-container {
         color: $somegrey;
-        background-color: $darkerblack;
+        background-color: $almostblack;
 
         .menu-button {
             .menu-icon {
@@ -11,7 +11,7 @@
 
         .tools {
             .item {
-                background-color: $almostblack;
+                background-color: $lightblack;
             }
 
             .one {
@@ -30,10 +30,10 @@
 
     .right-container {
         color: $somegrey;
-        background-color: $almostblack;
+        background-color: $darkerblack;
 
         .randomize-button {
-            background-color: $darkerblack;
+            background-color: $almostblack;
             
             .icon {
                 color: $justwhite;
