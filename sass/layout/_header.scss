@@ -260,11 +260,11 @@
         -o-user-select: none;
         user-select: none;
         height: 50px;
-        transition: all 0.8s ease;
+        transition: all 0.4s ease;
 
         &:hover {
             height: 350px;
-            transition: all 0.8s ease;
+            transition: all 0.4s ease;
 
             .icon {
                 color: #BB85FF;
@@ -295,7 +295,7 @@
                 top: 0px;                
             }
             opacity: 1;
-            transition: all 0.8s ease;
+            transition: all 0.4s ease;
         }
 
         .hcolor {
@@ -305,27 +305,28 @@
             opacity: 0;
             margin-left: 10%;
             width: 90%;
-            transition: all 0.8s ease;
+            transition: all 0.4s ease;
             cursor: pointer;
+            margin-top: 0;
 
             &:nth-child(2) {
-                top: -50px;                
+                top: -60px;                
             }
 
             &:nth-child(3) {
-                top: -100px;                
+                top: -120px;                
             }
 
             &:nth-child(4) {
-                top: -150px;                
+                top: -180px;                
             }
 
             &:nth-child(5) {
-                top: -200px;                
+                top: -240px;                
             }
 
             &:nth-child(6) {
-                top: -250px;                
+                top: -300px;                
             }
 
             .cc {
